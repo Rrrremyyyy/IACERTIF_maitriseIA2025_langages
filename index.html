@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full bg-gray-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA-CERTIF - Maîtrise 2025</title>
+    <!-- Chargement de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Importation de la police Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Définition de la police Inter comme police par défaut */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style pour l'onglet de navigation actif */
+        .nav-link.active {
+            background-color: #4f46e5; /* indigo-600 */
+            color: white;
+            font-weight: 600;
+        }
+        /* Masquer la scrollbar pour le conteneur principal mais permettre le défilement */
+        .main-content::-webkit-scrollbar {
+            display: none;
+        }
+        .main-content {
+            -ms-overflow-style: none;  /* IE et Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+</head>
+<body class="h-full flex overflow-hidden">
+
+    <!-- 1. Barre de navigation latérale -->
+    <nav class="w-64 h-full bg-gray-900 text-gray-200 flex flex-col flex-shrink-0">
+        <div class="p-6 text-center">
+            <h1 class="text-2xl font-bold text-white tracking-wider">IA-CERTIF</h1>
+            <p class="text-sm text-indigo-300">Maîtrise 2025</p>
+        </div>
+        <ul class="flex-1 px-4 py-2 space-y-2">
+            <li>
+                <a href="#" class="nav-link active" data-target="accueil">
+                    <span class="truncate">Accueil</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-target="python">
+                    <span class="truncate">Python : Le Moteur de l'IA</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-target="html_js">
+                    <span class="truncate">HTML/JS : L'Interface de l'IA</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-target="json">
+                    <span class="truncate">JSON : Le Messager de l'IA</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-target="google_tags">
+                    <span class="truncate">Google Tags & Marketing IA</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-target="a_propos">
+                    <span class="truncate">À propos du Badge</span>
+                </a>
+            </li>
+        </ul>
+        <div class="p-4 text-center text-xs text-gray-500">
+            <p>&copy; 2025 IA-CERTIF</p>
+        </div>
+    </nav>
+
+    <!-- 2. Conteneur de contenu principal -->
+    <main class="flex-1 h-full overflow-y-auto main-content bg-gray-100">
+        <div classs="p-8 lg:p-12">
+
+            <!-- Section Accueil (visible par défaut) -->
+            <section id="accueil" class="content-section p-8 lg:p-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Bienvenue sur IA-CERTIF</h2>
+                <p class="text-lg text-gray-700 mb-8">
+                    Votre guide de préparation pour le badge de micro-certification "IA Maîtrise 2025".
+                    Cette certification valide votre compréhension de l'écosystème technologique qui alimente l'intelligence artificielle moderne,
+                    des modèles back-end aux interactions utilisateur et à la collecte de données marketing.
+                </p>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-3">Objectif du Badge</h3>
+                    <p class="text-gray-600">
+                        Comprendre que l'IA n'est pas seulement un algorithme, mais un système complet. Ce guide explore les 4 piliers technologiques que vous devez maîtriser :
+                    </p>
+                    <ul class="list-disc list-inside mt-4 space-y-2 text-gray-700">
+                        <li><strong>Python :</strong> La construction des modèles d'IA.</li>
+                        <li><strong>HTML/JavaScript :</strong> L'interaction avec les utilisateurs.</li>
+                        <li><strong>JSON :</strong> La communication des données.</li>
+                        <li><strong>Google Tags :</strong> L'alimentation des modèles marketing.</li>
+                    </ul>
+                    <p class="mt-4 text-sm font-medium text-gray-500">
+                        Utilisez la navigation à gauche pour explorer chaque module.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section Python (cachée) -->
+            <section id="python" class="content-section hidden p-8 lg:p-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Python : Le Moteur de l'IA</h2>
+                <p class="text-lg text-gray-700 mb-8">
+                    Python est le langage dominant en IA, non pas parce que le langage lui-même est "intelligent", mais à cause de son écosystème mature et de sa simplicité.
+                </p>
+                [Image de la relation entre Python et les bibliothèques d'IA comme TensorFlow et PyTorch]
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                        <h3 class="text-xl font-semibold text-indigo-700 mb-3">Pourquoi Python ?</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li><strong>Syntaxe claire :</strong> Facile à lire et à écrire, idéal pour des algorithmes complexes.</li>
+                            <li><strong>Bibliothèques clés :</strong> L'accès à des outils puissants est la vraie raison.</li>
+                            <li><strong>Communauté :</strong> Une communauté mondiale de développeurs et de chercheurs.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                        <h3 class="text-xl font-semibold text-indigo-700 mb-3">Bibliothèques Essentielles (Maîtrise 2025)</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li><strong>TensorFlow & PyTorch :</strong> Pour le Deep Learning (réseaux de neurones, LLM).</li>
+                            <li><strong>Scikit-learn :</strong> Pour le Machine Learning classique (régressions, forêts d'arbres).</li>
+                            <li><strong>Pandas :</strong> Pour la manipulation et le nettoyage des données (DataFrames).</li>
+                            <li><strong>FastAPI / Flask :</strong> Pour exposer votre modèle IA en tant qu'API (voir JSON).</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-8 bg-gray-800 text-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-lg font-semibold mb-3">Exemple de code (Concept)</h4>
+                    <p class="text-sm text-gray-300 mb-4">Imaginez un script qui charge un modèle et fait une prédiction :</p>
+                    <pre class="bg-gray-900 p-4 rounded-md overflow-x-auto"><code class="language-python">
+# 1. Charger les bibliothèques
+import pandas as pd
+from sklearn.externals import joblib
+
+# 2. Charger les données d'entrée (ex: d'un fichier ou d'une API)
+input_data = pd.DataFrame([{"age": 30, "revenu": 50000}])
+
+# 3. Charger le modèle pré-entraîné
+model = joblib.load("modele_credit.pkl")
+
+# 4. Faire la prédiction
+prediction = model.predict(input_data)
+
+# 5. Renvoyer le résultat (ex: {'prediction': 'approuve'})
+print(f"Prédiction : {prediction[0]}")
+</code></pre>
+                </div>
+            </section>
+
+            <!-- Section HTML/JS (cachée) -->
+            <section id="html_js" class="content-section hidden p-8 lg:p-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">HTML/JS : L'Interface de l'IA</h2>
+                <p class="text-lg text-gray-700 mb-8">
+                    Si Python est le cerveau dans le serveur, HTML et JavaScript sont le visage et les mains côté utilisateur. Ils rendent l'IA accessible.
+                </p>
+                [Image d'un navigateur interagissant avec un modèle d'IA via une API]
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 mb-8">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-3">Rôles respectifs</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li><strong>HTML (HyperText Markup Language) :</strong> La structure. C'est le bouton "Prédire", le champ de texte où vous écrivez votre prompt, et la zone où le résultat s'affiche.</li>
+                        <li><strong>JavaScript (JS) :</strong> L'interactivité. C'est le code qui, au clic du bouton :
+                            <ol class="list-decimal list-inside ml-6 mt-2">
+                                <li>Prend votre texte (le prompt).</li>
+                                <li>L'envoie au serveur IA (souvent via JSON).</li>
+                                <li>Attend la réponse.</li>
+                                <li>Affiche la réponse de l'IA dans l'HTML.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-8 bg-gray-800 text-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-lg font-semibold mb-3">Exemple de code (Concept JS)</h4>
+                    <p class="text-sm text-gray-300 mb-4">Code JS simple pour appeler une API d'IA (comme celle de l'exemple Python) :</p>
+                    <pre class="bg-gray-900 p-4 rounded-md overflow-x-auto"><code class="language-javascript">
+// 1. Récupérer le bouton et la zone de résultat
+const predictButton = document.getElementById("predict-btn");
+const resultArea = document.getElementById("result-area");
+
+// 2. Écouter le clic
+predictButton.addEventListener("click", async () => {
+    
+    // 3. Préparer les données à envoyer
+    const dataToSend = { age: 30, revenu: 50000 };
+
+    // 4. Appeler l'API IA (serveur Python)
+    const response = await fetch("https://api.mon-ia.com/predict", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(dataToSend) // Voir section JSON
+    });
+
+    const result = await response.json(); // Voir section JSON
+
+    // 5. Afficher le résultat dans l'HTML
+    resultArea.textContent = `Résultat : ${result.prediction}`;
+});
+</code></pre>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 mt-8">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-3">Le Saviez-vous ? TensorFlow.js</h3>
+                    <p class="text-gray-600">
+                        Pour des IA plus petites, JavaScript peut même faire tourner le modèle <strong>directement dans le navigateur</strong> de l'utilisateur avec <strong>TensorFlow.js</strong>.
+                        Cela permet des applications IA rapides qui fonctionnent hors ligne, sans avoir besoin d'un serveur Python.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section JSON (cachée) -->
+            <section id="json" class="content-section hidden p-8 lg:p-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">JSON : Le Messager de l'IA</h2>
+                <p class="text-lg text-gray-700 mb-8">
+                    JSON (JavaScript Object Notation) est le langage universel pour l'échange de données sur le web. C'est le "traducteur" qui permet à votre JavaScript (navigateur) de parler à votre Python (serveur).
+                </p>
+                [Image d'un flux de données JSON entre un client et un serveur IA]
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-3">Pourquoi JSON ?</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li><strong>Lisible par l'humain :</strong> Facile à lire et à débugger.</li>
+                        <li><strong>Léger :</strong> Transfère les données rapidement.</li>
+                        <li><strong>Natif pour JavaScript :</strong> JS le comprend sans effort.</li>
+                        <li><strong>Supporté partout :</strong> Python (via `import json`), Java, C#, PHP... tous le parlent.</li>
+                    </ul>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-gray-800 mt-10 mb-6">Le Flux de Données IA-CERTIF</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- 1. Requête du Navigateur (JS) vers le Serveur (Python) -->
+                    <div class="bg-gray-800 text-white p-6 rounded-lg shadow-lg">
+                        <h4 class="text-lg font-semibold mb-3">Étape 1 : Requête (JS vers Python)</h4>
+                        <p class="text-sm text-gray-300 mb-4">Le JavaScript de votre navigateur envoie ceci :</p>
+                        <pre class="bg-gray-900 p-4 rounded-md overflow-x-auto"><code class="language-json">
+{
+  "user_id": 12345,
+  "prompt": "Explique-moi le JSON en IA",
+  "temperature": 0.7
+}
+</code></pre>
+                    </div>
+
+                    <!-- 2. Réponse du Serveur (Python) vers le Navigateur (JS) -->
+                    <div class="bg-gray-800 text-white p-6 rounded-lg shadow-lg">
+                        <h4 class="text-lg font-semibold mb-3">Étape 2 : Réponse (Python vers JS)</h4>
+                        <p class="text-sm text-gray-300 mb-4">Le serveur Python/FastAPI, après avoir consulté l'IA, répond ceci :</p>
+                        <pre class="bg-gray-900 p-4 rounded-md overflow-x-auto"><code class="language-json">
+{
+  "id_reponse": "resp_abc_789",
+  "prediction_text": "Le JSON est un format léger d'échange de données...",
+  "confiance": 0.98,
+  "tokens_utilises": 45
+}
+</code></pre>
+                    </div>
+                </div>
+                <p class="text-gray-700 mt-8 text-center">
+                    Le JavaScript reçoit cette réponse JSON, la "parse" (analyse), et utilise `result.prediction_text` pour l'afficher à l'utilisateur dans l'HTML.
+                </p>
+            </section>
+            
+            <!-- Section Google Tags (cachée) -->
+            <section id="google_tags" class="content-section hidden p-8 lg:p-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Google Tags & Marketing IA</h2>
+                <p class="text-lg text-gray-700 mb-8">
+                    C'est ici que l'IA rencontre le business. Les "Tags" (comme Google Tag Manager ou Google Analytics 4) sont des capteurs de données. L'IA est le moteur qui analyse ces données.
+                </p>
+                [Image du flux de données des Google Tags vers les modèles d'IA de Google Ads]
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 mb-8">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-3">Le Tag n'est PAS l'IA</h3>
+                    <p class="text-gray-600 mb-4">
+                        Un tag est un petit morceau de... <strong>JavaScript</strong> ! Son rôle est simple :
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>Observer ce que fait l'utilisateur (clics, pages vues, achats).</li>
+                        <li>Envoyer ces informations (souvent en JSON !) aux serveurs de Google.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-3">Où est l'IA ? (Maîtrise 2025)</h3>
+                    <p class="text-gray-600 mb-4">
+                        L'IA de Google utilise les milliards de points de données collectés par les tags pour :
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li><strong>Audiences Prédictives (GA4) :</strong> Identifier les "utilisateurs susceptibles d'acheter dans les 7 jours" ou les "utilisateurs susceptibles de se désabonner".</li>
+                        <li><strong>Smart Bidding (Google Ads) :</strong> Enchérir automatiquement plus ou moins haut pour vos annonces, en prédisant la probabilité qu'un clic mène à une vente.</li>
+                        <li><strong>Modélisation de l'Attribution :</strong> Utiliser l'IA pour deviner le parcours client même sans cookies (attribution "data-driven").</li>
+                    </ul>
+                    <p class="text-gray-700 font-semibold mt-6">
+                        <strong>Concept Clé :</strong> Les Tags (JS) collectent les données brutes. Les serveurs de Google (via leurs propres modèles type Python/TensorFlow) les transforment en prédictions marketing. Votre badge certifie que vous comprenez ce flux.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section À Propos (cachée) -->
+            <section id="a_propos" class="content-section hidden p-8 lg:p-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">À propos du Badge "IA Maîtrise 2025"</h2>
+                <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 prose prose-lg max-w-none">
+                    <h3 class="text-xl font-semibold text-indigo-700">Ce que ce badge certifie</h3>
+                    <p>
+                        Le badge de micro-certification "IA Maîtrise 2025" n'est pas un diplôme de Data Scientist. Il atteste d'une compétence bien plus large et tout aussi cruciale dans le monde professionnel : <strong>la maîtrise de l'écosystème d'intégration de l'IA.</strong>
+                    </p>
+                    <p>
+                        Un titulaire de ce badge comprend comment les différentes briques technologiques s'assemblent pour créer un produit IA fonctionnel et générateur de valeur :
+                    </p>
+                    <ul>
+                        <li>Il sait que <strong>Python</strong> et ses bibliothèques (TensorFlow, Scikit-learn) sont utilisés pour <strong>entraîner et servir</strong> les modèles.</li>
+                        <li>Il sait que ces modèles sont le plus souvent exposés via une <strong>API</strong> qui communique en <strong>JSON</strong>.</li>
+                        <li>Il sait que l'application finale (le "frontend") est construite en <strong>HTML</strong> et rendue interactive grâce à <strong>JavaScript</strong>, qui consomme cette API.</li>
+                        <li>Il comprend que dans un contexte commercial, ce même <strong>JavaScript</strong> (via des <strong>Google Tags</strong>) est utilisé pour collecter des données de performance qui, à leur tour, <strong>alimentent d'autres modèles d'IA</strong> pour optimiser le marketing et la croissance.</li>
+                    </ul>
+                    <p class="font-semibold text-gray-800">
+                        En résumé, le titulaire du badge "IA Maîtrise 2025" fait le pont entre les équipes techniques (data scientists), les développeurs web (front-end) et les équipes business (marketing), lui permettant de piloter ou de contribuer efficacement à des projets d'IA de bout en bout.
+                    </p>
+                </div>
+            </section>
+            
+        </div>
+    </main>
+
+    <!-- Script pour la navigation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const contentSections = document.querySelectorAll('.content-section');
+            const navLinkClass = 'flex items-center px-4 py-3 rounded-md text-sm font-medium hover:bg-gray-700 hover:text-white transition-colors duration-150';
+
+            // Appliquer les classes de base à tous les liens de navigation
+            navLinks.forEach(link => {
+                link.className = navLinkClass; // Réinitialise les classes
+                if (link.dataset.target === 'accueil') {
+                    link.classList.add('active'); // L'accueil est actif par défaut
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.dataset.target;
+
+                    // 1. Cacher toutes les sections
+                    contentSections.forEach(section => {
+                        section.classList.add('hidden');
+                    });
+
+                    // 2. Afficher la section cible
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        targetSection.classList.remove('hidden');
+                    }
+
+                    // 3. Mettre à jour le style "actif"
+                    navLinks.forEach(navLink => {
+                        navLink.classList.remove('active');
+                    });
+                    link.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
